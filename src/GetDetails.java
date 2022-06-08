@@ -1,7 +1,7 @@
 
 public class GetDetails {
 	
-	static String Details(String name, int roll, int marks,char grade)
+	public static String Details(String name, int roll, int marks,char grade)
 	{
 		
 		String re="";

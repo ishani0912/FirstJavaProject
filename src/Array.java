@@ -10,12 +10,13 @@ public class Array {
 		System.out.println(fruits[1]);
 		System.out.println(cars[3]);
 		
-		//update an element
+		//updating an element.
 		fruits[1]= "banana";
 		System.out.println(fruits[1]);
 		
 		System.out.println(fruits.length);
 		
+		//for loop iteration
 		for(int i=0; i<fruits.length;i++)
 		{
 			System.out.println(fruits[i]);

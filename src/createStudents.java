@@ -1,8 +1,9 @@
+import com.globalpayex.college.entities.StudentOld;
 
 public class createStudents {
 	
 	public static void main(String[] args) {
-		System.out.println(Student.count);
+		System.out.println(StudentOld.count);
 		//Student s1 = new Student();
 		//Student s2 = new Student();
 				
@@ -16,10 +17,10 @@ public class createStudents {
 		s1.gender= 'f';
 		s1.marks = 50; */
 		
-		Student s1 = new Student("jane",'f', 15, 88);
-		System.out.println(Student.count);
-		Student s2 = new Student();
-		System.out.println(Student.count);
+		StudentOld s1 = new StudentOld("jane",'f', 15, 88);
+		System.out.println(StudentOld.count);
+		StudentOld s2 = new StudentOld();
+		System.out.println(StudentOld.count);
 		
 		
 	/*	System.out.println(s1.name);
@@ -31,7 +32,7 @@ public class createStudents {
 		//System.out.println(s1.getgrade());
 		//System.out.println(s2.getDetails());
 		
-		Student s4 = Student.newInstance("ishani",'f', 15,55);	
+		StudentOld s4 = StudentOld.newInstance("ishani",'f', 15,55);	
 		System.out.println(s4.getDetails());
 		
 		

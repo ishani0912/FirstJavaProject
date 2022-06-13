@@ -1,0 +1,63 @@
+package com.globalpayex.college.entities;
+
+public class Student extends CollegeUser {
+	
+	
+	public int roll;
+	public float marks;
+	
+	
+	public Student(String name, char gender, int roll, float marks) {
+	//	super(name,gender);			//calls the super class constructor- no argument constructor
+		//internal: CollegeUser(name,gender)
+		
+	//	this.roll = roll;
+	//	this.marks = marks;
+		
+		this(name,gender,roll,marks);
+	}
+	
+	public Student(String name, char gender, int roll, float marks, Address ad) {
+		//	super(name,gender);			//calls the super class constructor- no argument constructor
+			//internal: CollegeUser(name,gender)
+			
+		//	this.roll = roll;
+		//	this.marks = marks;
+			
+			this(name,gender,roll,marks, ad);
+		}
+	
+	@Override
+	public String getDetails() {
+		// TODO Auto-generated method stub
+		String str1 = super.getDetails();
+		super.getDetails();
+		//internally: on CollegeUser class, it will use CollegeUser.getDetails()
+		return String.format("%sRoll:%s\nMarks:%s\n",str1 ,this.roll,this.marks);
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + roll;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		if (roll != other.roll)
+			return false;
+		return true;
+	}
+	
+	
+
+}

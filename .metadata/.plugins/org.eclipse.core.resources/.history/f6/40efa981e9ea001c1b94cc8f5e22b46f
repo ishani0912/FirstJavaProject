@@ -1,0 +1,42 @@
+package com.globalpayex.college.entities;
+
+public class Address {
+	
+	private String state,country;
+	private int postalcode;
+	public Address(String state, String country, int postalcode) {
+		super();
+		this.state = state;
+		this.country = country;
+		this.postalcode = postalcode;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public int getPostalcode() {
+		return postalcode;
+	}
+	public void setPostalcode(int postalcode) {
+		this.postalcode = postalcode;
+	}
+	
+	public String getDetails()
+	{
+		return String.format("State:%s\nCountry:%s\nPostalCode:%s\n", state, country, postalcode);
+	}
+	
+	
+	
+	
+	
+
+}
